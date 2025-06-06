@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ethio Explore </title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/> 
+ 
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="nav-wrapper container">
+    <button class="mobile-menu-button">&#9776;</button>
+    <div class="logo">Ethio<span>Explore</span></div>
+    <ul class="desktop-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <ul class="mobile-menu container" id="mobileMenu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#destinations">Destinations</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <!-- Slides -->
+  <div class="slides active" style="background-image: url('assets/gondar.jpg');"></div>
+  <div class="slides" style="background-image: url('assets/tiya(1).jpg');"></div>
+  <div class="slides" style="background-image: url('assets/lalibela.webp');"></div>
+  
+  <!-- Content -->
+  <div class="hero-content">
+    <h1>Discover Ethiopia's <span>Timeless Wonders</span></h1>
+    <p>From ancient ruins to breathtaking landscapes, explore 10 of Ethiopia's most spectacular destinations that will leave you in awe.</p>
+    <a href="#destinations" class="hero-btn">Explore Now</a> 
+  </div>
+
+  <!-- Slide Controls -->
+  <div class="slider-controls">
+    <button onclick="prevSlide()">&#10094;</button>
+    <button onclick="nextSlide()">&#10095;</button>
+  </div>
+</section>
+
+<!-- Introduction Section -->
+<section class="intro-section">
+  <div class="container">
+    <div class="intro-flex">
+      <img src="assets/lake.jpg"alt="Ethiopia landscape" class="intro-img" />
+      <div class="intro-text">
+        <h2 class="intro-title animate-fadeInUp">A Land of <span class="intro-subtitle">Diverse Wonders</span></h2>
+        <p class="intro-desc delay-100">
+          Ethiopia, often called the "Cradle of Mankind," is a country of breathtaking landscapes, ancient civilizations, and rich cultural heritage...
+        </p>
+        <p class="intro-desc delay-200">
+          Our curated list of 10 must-visit destinations showcases the best of what this amazing country has to offer.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Destinations Section -->
+<section id="destinations" class="destinations">
+  <div class="container">
+    <h2 class="destinations-title">Top Ethiopian Destinations</h2>
+    <p class="destinations-subtitle">Discover Ethiopia's most spectacular attractions, each offering a unique glimpse into this ancient land's wonders.</p>
+    <div class="destinations-grid">
+      <!-- Destination Card -->
+      <div class="destination-card">
+        <div class="card-img">
+          <img src="assets/lalibela.webp" alt="Lalibela" />
+          <div class="card-overlay"></div>
+          <span class="card-number">1</span> 
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Lalibela Rock-Hewn Churches</h3>
+          <p class="card-desc">The Rock-Hewn Churches of Lalibela are among Ethiopia’s most extraordinary cultural and architectural treasures.</p>
+          <div class="card-footer">
+            <span class="location"><i class="fas fa-map-marker-alt"></i> Amhara Region</span>
+            <span class="read-more" onclick="openModal('The Rock-Hewn Churches of Lalibela are among Ethiopia’s most extraordinary cultural and architectural treasures. Located in the Amhara Region, these eleven monolithic churches were carved directly into solid volcanic rock during the 12th and 13th centuries, primarily under the reign of King Gebre Meskel Lalibela. They were intended to serve as a New Jerusalem for Ethiopian Orthodox Christians, especially for those unable to make a pilgrimage to Jerusalem itself.')">Read More</span>
+          </div>
+        </div>
+      </div>
+            <div class="destination-card">
+        <div class="card-img">
+          <img src="assets/axum (1).jpg" alt="axum" />
+          <div class="card-overlay"></div>
+          <span class="card-number">2</span> 
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Aksum </h3>
+          <p class="card-desc">Aksum (also spelled Axum) is a UNESCO World Heritage Site and one of Ethiopia’s most significant archaeological and religious centers. </p>
+          <div class="card-footer">
+            <span class="location"><i class="fas fa-map-marker-alt"></i> Tigray Region</span>
+            <span class="read-more" onclick="openModal('Aksum (also spelled Axum) is a UNESCO World Heritage Site and one of Ethiopia’s most significant archaeological and religious centers. Once the heart of the Aksumite Empire (circa 1st to 10th centuries CE), it remains a sacred city for Ethiopian Orthodox Christians and a must-visit for history and culture enthusiasts.')">Read More</span>
+          </div>
+        </div>
+      </div>
+            <div class="destination-card">
+        <div class="card-img">
+          <img src="assets/gondar3.jpg" alt="gondar" />
+          <div class="card-overlay"></div>
+          <span class="card-number">3</span> 
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Gondar </h3>
+          <p class="card-desc">Founded in 1636 by Emperor Fasilides, Gondar served as the capital of the Ethiopian Empire for over two centuries. </p>
+          <div class="card-footer">
+            <span class="location"><i class="fas fa-map-marker-alt"></i> Amhara Region</span>
+            <span class="read-more" onclick="openModal('Founded in 1636 by Emperor Fasilides, Gondar served as the capital of the Ethiopian Empire for over two centuries. Under his reign, the city flourished as a center of art, religion, and governance. Emperor Fasilides initiated the construction of the Fasil Ghebbi, a fortified royal enclosure that houses several castles and palaces, showcasing a blend of Ethiopian, Portuguese, Hindu, and Arab architectural styles. This site was designated a UNESCO World Heritage Site in 1979 due to its historical and architectural significance.')">Read More</span>
+          </div>
+        </div>
+      </div>
+            <div class="destination-card">
+        <div class="card-img">
+          <img src="assets/dalol (1).jpg" alt="dallol" />
+          <div class="card-overlay"></div>
+          <span class="card-number">4</span> 
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"> Danakil Depression </h3>
+          <p class="card-desc">The Danakil Depression, located in the northeastern part of Ethiopia's Afar Region, is one of Earth's most extreme and fascinating landscapes.  </p>
+          <div class="card-footer">
+            <span class="location"><i class="fas fa-map-marker-alt"></i> Afar Region</span>
+            <span class="read-more" onclick="openModal('The Danakil Depression, located in the northeastern part of Ethiopia Afar Region, is one of Earth most extreme and fascinating landscapes. This vast geological depression sits approximately 125 meters below sea level and is part of the Afar Triple Junction, where the tectonic plates of Africa, Arabia, and India meet. It is renowned for its extreme heat, unique geological formations, and vibrant colors, earning it the title of the hottest inhabited place on Earth with average daily maximum temperatures around 41°C (106°F). ')">Read More</span>
+          </div>
+        </div>
+      </div>
+            <div class="destination-card">
+        <div class="card-img">
+          <img src="assets/Harar.jpg" alt="Harar" />
+          <div class="card-overlay"></div>
+          <span class="card-number">5</span> 
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Harar Jugol </h3>
+          <p class="card-desc">Harar Jugol, often referred to as the "City of Saints," is a historic walled city in eastern Ethiopia, renowned for its rich Islamic heritage and vibrant cultural traditions.</p>
+          <div class="card-footer">
+            <span class="location"><i class="fas fa-map-marker-alt"></i> Harar </span>
+            <span class="read-more" onclick="openModal('Harar Jugol, often referred to as the City of Saints, is a historic walled city in eastern Ethiopia, renowned for its rich Islamic heritage and vibrant cultural traditions. Recognized as a UNESCO World Heritage Site since 2006, Harar Jugol stands as a testament to the harmonious blend of African and Islamic influences. ')">Read More</span>
+          </div>
+        </div>
+      </div>
+            <div class="destination-card">
+        <div class="card-img">
+          <img src="assets/tiya (1).jpg" alt="tiya" />
+          <div class="card-overlay"></div>
+          <span class="card-number">6</span> 
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Tiya </h3>
+          <p class="card-desc">The site comprises 36 monuments, including 32 carved stelae (stone pillars) adorned with enigmatic symbols, notably swords and human figures. </p>
+          <div class="card-footer">
+            <span class="location"><i class="fas fa-map-marker-alt"></i> SNNS Region</span>
+            <span class="read-more" onclick="openModal('The site comprises 36 monuments, including 32 carved stelae (stone pillars) adorned with enigmatic symbols, notably swords and human figures. These stelae are believed to mark a large prehistoric burial complex, with the carvings possibly representing a lost language or symbolic code .')">Read More</span>
+          </div>
+        </div>
+      </div>
+            <div class="destination-card">
+        <div class="card-img">
+          <img src="assets/dashen mt1.jpg" alt="dashen" />
+          <div class="card-overlay"></div>
+          <span class="card-number">7</span> 
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Simien Mountains National Park </h3>
+          <p class="card-desc">Semen Mountains National Park, also known as the Simien Mountains National Park, is a UNESCO World Heritage Site located in northern Ethiopia's Amhara Region.</p>
+          <div class="card-footer">
+            <span class="location"><i class="fas fa-map-marker-alt"></i> Amhara Region</span>
+            <span class="read-more" onclick="openModal('Semen Mountains National Park, also known as the Simien Mountains National Park, is a UNESCO World Heritage Site located in northern Ethiopia’s Amhara Region. Established in 1969, it spans approximately 412 km² and is renowned for its dramatic landscapes, rich biodiversity, and cultural significance.')">Read More</span>
+          </div>
+        </div>
+      </div>
+            <div class="destination-card">
+        <div class="card-img">
+          <img src="assets/abay.jpg" alt="abay" />
+          <div class="card-overlay"></div>
+          <span class="card-number">8</span> 
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"> Blue Nile Falls (Tis Issat) </h3>
+          <p class="card-desc">The Blue Nile Falls, locally known as Tis Abay (meaning "Great Smoke"), is one of Ethiopia's most iconic natural landmarks.</p>
+          <div class="card-footer">
+            <span class="location"><i class="fas fa-map-marker-alt"></i> Amhara Region</span>
+            <span class="read-more" onclick="openModal('The Blue Nile Falls, locally known as Tis Abay (meaning ‛Great Smoke’), is one of Ethiopia's most iconic natural landmarks. Located approximately 30 kilometers southeast of Bahir Dar, in the Amhara Region, the falls cascade 42 meters into a deep gorge, creating a misty spectacle that inspired its name.')">Read More</span>
+          </div>
+        </div>
+      </div>
+            <div class="destination-card">
+        <div class="card-img">
+          <img src="assets/lake2.jpg" alt="Lalibela" />
+          <div class="card-overlay"></div>
+          <span class="card-number">9</span> 
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Lake Tana </h3>
+          <p class="card-desc">Lake Tana is Ethiopia’s largest lake and the primary source of the Blue Nile River.</p>
+          <div class="card-footer">
+            <span class="location"><i class="fas fa-map-marker-alt"></i> Amhara Region</span>
+            <span class="read-more" onclick="openModal('Lake Tana is Ethiopia’s largest lake and the primary source of the Blue Nile River. Located in the Amhara Region, it covers approximately 3,156 km² and sits at an elevation of 1,788 meters above sea level. The lake is fed by over 60 rivers, with the Gilgel Abbay, Megech, Gumara, and Ribb rivers contributing the majority of its water. Its outflow forms the Blue Nile, which flows southward to Sudan and Egypt.')">Read More</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery">
+  <div class="container">
+    <h2 class="gallery-title">Ethiopia <span>in Pictures</span></h2>
+    <p class="gallery-subtitle">A visual journey through Ethiopia's stunning landscapes, vibrant cultures, and ancient history.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="assets/gondar7.jpg" alt="Landscape" />
+      </div>
+      <div class="gallery-item">
+        <img src="assets/market.jpg" alt="Market" />
+      </div>
+      <div class="gallery-item">
+        <img src="assets/axum (1).jpg" alt="Coffee Ceremony" />
+      </div>
+      <div class="gallery-item">
+        <img src="assets/lake1.jpg" alt="Landscape" />
+      </div>
+            <div class="gallery-item">
+        <img src="assets/abay1.jpg" alt="Market" />
+      </div>
+      <div class="gallery-item">
+        <img src="assets/coffee (2).jpg" alt="Coffee Ceremony" />
+      </div>
+      <div class="gallery-item">
+        <img src="assets/dashen mt1.jpg" alt="Landscape" />
+      </div>
+       <div class="gallery-item">
+        <img src="assets/lalibela4.jpg" alt="Coffee Ceremony" />
+      </div>
+      <div class="gallery-item">
+        <img src="assets/abay.jpg" alt="Coffee Ceremony" />
+      </div>
+
+    </div>
+    
+   <button onclick="openGalleryModal()" class="view-gallery">View Full Gallery</button>
+  </div>
+</section>
+
+<!-- Gallery Modal -->
+<div id="galleryModal" class="modal">
+  <div class="modal-backdrop" onclick="closeGalleryModal()"></div>
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeGalleryModal()">&times;</span>
+    <div class="modal-body">
+      <h2 class="modal-title">Full Gallery</h2>
+      <div class="gallery-modal-grid">
+
+        <img src="assets/gondar7.jpg" alt="Landscape" />
+        <img src="assets/market.jpg" alt="Market" />
+        <img src="assets/axum (1).jpg" alt="Coffee Ceremony" />
+        <img src="assets/lake1.jpg" alt="Landscape" />
+        <img src="assets/abay1.jpg" alt="Market" />
+        <img src="assets/lalibela4.jpg" alt="Coffee Ceremony" />
+                <img src="assets/gondar7.jpg" alt="Landscape" />
+        <img src="assets/market.jpg" alt="Market" />
+        <img src="assets/axum (1).jpg" alt="Coffee Ceremony" />
+        <img src="assets/lake1.jpg" alt="Landscape" />
+        <img src="assets/abay1.jpg" alt="Market" />
+        <img src="assets/lalibela4.jpg" alt="Coffee Ceremony" />
+                <img src="assets/gondar7.jpg" alt="Landscape" />
+        <img src="assets/market.jpg" alt="Market" />
+        <img src="assets/axum (1).jpg" alt="Coffee Ceremony" />
+        <img src="assets/lake1.jpg" alt="Landscape" />
+        <img src="assets/abay1.jpg" alt="Market" />
+        <img src="assets/lalibela4.jpg" alt="Coffee Ceremony" />
+                <img src="assets/gondar7.jpg" alt="Landscape" />
+        <img src="assets/market.jpg" alt="Market" />
+        <img src="assets/axum (1).jpg" alt="Coffee Ceremony" />
+        <img src="assets/lake1.jpg" alt="Landscape" />
+        <img src="assets/abay1.jpg" alt="Market" />
+        <img src="assets/lalibela4.jpg" alt="Coffee Ceremony" />
+                <img src="assets/gondar7.jpg" alt="Landscape" />
+        <img src="assets/market.jpg" alt="Market" />
+        <img src="assets/axum (1).jpg" alt="Coffee Ceremony" />
+        <img src="assets/lake1.jpg" alt="Landscape" />
+        <img src="assets/abay1.jpg" alt="Market" />
+        <img src="assets/lalibela4.jpg" alt="Coffee Ceremony" />
+                <img src="assets/gondar7.jpg" alt="Landscape" />
+        <img src="assets/market.jpg" alt="Market" />
+        <img src="assets/axum (1).jpg" alt="Coffee Ceremony" />
+        <img src="assets/lake1.jpg" alt="Landscape" />
+        <img src="assets/abay1.jpg" alt="Market" />
+        <img src="assets/lalibela4.jpg" alt="Coffee Ceremony" />
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+  <div class="container">
+    <h2 class="testimonials-title">Traveler Stories</h2>
+    <div class="testimonial-cards">
+      <!-- Testimonial -->
+      <div class="testimonial-card">
+        <div class="testimonial-user">
+          <div class="testimonial-avatar">
+            <img src="assets/9.jpg" alt="Johnson" />
+          </div>
+          <div>
+            <div class="testimonial-name">Johnson</div>
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <p class="testimonial-quote">"Visiting Lalibela was a spiritual experience. The ancient rock-hewn churches are unlike anything I've seen before."</p>
+        <div class="testimonial-meta"><i class="fas fa-calendar-alt"></i> Visited October 2025</div>
+      </div>
+            <div class="testimonial-card">
+        <div class="testimonial-user">
+          <div class="testimonial-avatar">
+            <img src="assets/19.jpg" alt="Sarah" />
+          </div>
+          <div>
+            <div class="testimonial-name">Sarah</div>
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <p class="testimonial-quote">"Visiting Gondar was a spiritual experience."</p>
+        <div class="testimonial-meta"><i class="fas fa-calendar-alt"></i> Visited October 2025</div>
+      </div>
+            <div class="testimonial-card">
+        <div class="testimonial-user">
+          <div class="testimonial-avatar">
+            <img src="assets/0.jpg" alt="Dave " />
+          </div>
+          <div>
+            <div class="testimonial-name">Dave</div>
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <p class="testimonial-quote">"Visiting Axum was a spiritual experience."</p>
+        <div class="testimonial-meta"><i class="fas fa-calendar-alt"></i> Visited june 2025</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="newsletter">
+  <div class="container">
+    <h2 class="newsletter h2">Plan Your Ethiopian Adventure</h2>
+    <p class="newsletter p">Subscribe to our newsletter for travel tips, itinerary ideas, and special offers to help you explore Ethiopia's wonders.</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Your email address" />
+      <button type="submit">Subscribe Now</button>
+      <small>We respect your privacy. Unsubscribe at any time.</small>
+    </form>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="contact-title">Get In <span>Touch</span></h2>
+    <div class="contact-flex">
+      <div class="contact-info">
+        <div class="contact-details">
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-label">Our Office</div>
+              <div class="contact-value">Maraki, Gondar, Ethiopia</div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-label">Email Us</div>
+              <div class="contact-value">info@ethioexplore.com</div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <div class="contact-label">Call Us</div>
+              <div class="contact-value">+251 11 123 4567</div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <div class="contact-label">Working Hours</div>
+              <div class="contact-value">Mon-Fri: 8:30 AM - 5:30 PM<br>Sat: 9:00 AM - 2:00 PM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="Enter your name" />
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Write your message"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--   Map Section 
+<div class="map-container">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63373.3788
+  4731896!2d38.72587662764404!3d9.01079306846213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!
+  4f13.1!3m3!1m2!1s0x164b85cef5ab402d:0x8467b6b037a24d49!2sAddis%20Ababa,%20Ethiopi
+  a!5e0!3m2!1sen!2sus!4v1688660710038!5m2!1sen!2sus" width="100%" height="400" style="border:0;" 
+  allowfullscreen loading="lazy"></iframe>
+</div>
+-->
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h3>Ethio<span>Explore</span></h3>
+        <p>Your gateway to discovering Ethiopia's timeless wonders, rich culture, and breathtaking landscapes.</p>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="quick-links">
+          <li><a href="#">Home</a></li> 
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Popular Destinations</h4>
+        <ul class="popular">
+          <li><a href="#">Lalibela</a></li>
+          <li><a href="#">Simien Mountains</a></li>
+          <li><a href="#">Danakil Depression</a></li>
+          <li><a href="#">Axum</a></li>
+          <li><a href="#">Gondar</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="copyright">&copy; 2025 EthioExplore. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div id="destinationModal" class="modal">
+  <div class="modal-backdrop" onclick="closeModal()"></div>
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <div class="modal-header">
+      <img id="modalImage" src="" alt="">
+    </div>
+    <div class="modal-body">
+      <h2 id="modalTitle">Destination Title</h2>
+      <p id="modalDescription">This is a sample description about the destination.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Back to Top Button -->
+<button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+<script>
+  // Hero slideshow logic
+  const slides = document.querySelectorAll('.slides');
+  let current = 0;
+
+  function showSlide(index) {
+    slides.forEach(s => s.classList.remove('active'));
+    if (index >= slides.length) current = 0;
+    if (index < 0) current = slides.length - 1;
+    slides[current].classList.add('active');
+  }
+
+  function nextSlide() {
+    current++;
+    showSlide(current);
+  }
+
+  function prevSlide() {
+    current--;
+    showSlide(current);
+  }
+
+  setInterval(nextSlide, 5000); // Auto slide every 5 seconds
+
+  // Mobile Menu Toggle
+  const mobileMenuButton = document.querySelector('.mobile-menu-button');
+  const mobileMenu = document.getElementById('mobileMenu');
+  mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+  });
+
+  // Close when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+      mobileMenu.classList.remove('active');
+    }
+  });
+
+  // Back to Top Button
+  const backToTopButton = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopButton.style.opacity = '1';
+      backToTopButton.style.visibility = 'visible';
+    } else {
+      backToTopButton.style.opacity = '0';
+      backToTopButton.style.visibility = 'hidden';
+    }
+  });
+  backToTopButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+    // Gallery Modal Functions
+  function openGalleryModal() {
+    document.getElementById("galleryModal").classList.add("active");
+  }
+
+  function closeGalleryModal() {
+    document.getElementById("galleryModal").classList.remove("active");
+  }
+
+  // Close modal on click outside
+  document.getElementById("galleryModal")?.addEventListener("click", function(e) {
+    if (e.target === this) {
+      closeGalleryModal();
+    }
+  });
+
+  // Modal Functions
+  function openModal(title, desc, image) {
+    document.getElementById("modalTitle").textContent = title;
+    document.getElementById("modalDescription").textContent = desc;
+    document.getElementById("modalImage").src = image;
+    document.getElementById("destinationModal").classList.add("active");
+  }
+
+  function closeModal() {
+    document.getElementById("destinationModal").classList.remove("active");
+  }
+
+  document.getElementById("destinationModal").addEventListener("click", function(e) {
+    if (e.target === this) {
+      closeModal();
+    }
+  });
+</script>
+
+</body>
+</html>
